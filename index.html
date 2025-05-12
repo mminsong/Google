@@ -3,10 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
     <title>새 탭</title>
     <link rel="stylesheet" href="./index.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="./google.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="./image/google.ico" />
+
+    <script src="./index.js"></script>
   </head>
 
   <body
@@ -20,14 +27,17 @@
         <div>이미지</div>
         <div>
           <a href="https://labs.google.com/search?source=ntp"
-            ><img src="./science.svg"
+            ><img class="test" src="./image/science.svg" alt="Search Labs"
           /></a>
         </div>
-        <div><img src="./app.svg" /></div>
+        <div><img src="./image/app.svg" alt="Google 앱" /></div>
       </div>
     </header>
     <main>
-      <div>Google</div>
+      <div>
+        <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span
+        ><span>e</span>
+      </div>
       <div>
         <input
           type="text"
@@ -35,17 +45,32 @@
           onfocus="this.placeholder = ''"
         />
         <div class="input-icons">
-          <img src="./mic.svg" />
-          <img src="./image.svg" />
+          <img src="./image/mic.svg" alt="음성 검색" />
+          <img src="./image/image.svg" alt="이미지로 검색" />
         </div>
       </div>
       <div>
         <div>+</div>
         <div>바로가기 추가</div>
       </div>
+      <div class="popup">
+        <div>바로가기 추가</div>
+        <div>
+          <div>이름</div>
+          <input />
+        </div>
+        <div>
+          <div>URL</div>
+          <input />
+        </div>
+        <div>
+          <button>취소</button>
+          <button>완료</button>
+        </div>
+      </div>
     </main>
     <footer>
-      <div><img src="./edit.svg" /> Chrome 맞춤설정</div>
+      <div><img src="./image/edit.svg" /> Chrome 맞춤설정</div>
     </footer>
   </body>
 </html>

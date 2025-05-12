@@ -1,3 +1,3 @@
 function popUp() {
-  alert('m');
+  document.getElement('popup').style.visibility='visible';
 }

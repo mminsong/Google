@@ -1,3 +1,3 @@
-function url() {
-  alert("test");
+function popUp() {
+  document.querySelector('popup').
 }

@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>새 탭</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
 
-<body>
+  <body
+    ondragstart="return false"
+    oncontextmenu="return false"
+    onselectstart="return false"
+  >
     <header>
+      <div>
+        <div>Gmail</div>
+        <div>이미지</div>
         <div>
-            <div>Gmail</div>
-            <div>이미지</div>
-            <div><a href="https://labs.google.com/search?source=ntp"><img src="./science.svg"></a></div>
-            <div><img src="./app.svg"></div>
+          <a href="https://labs.google.com/search?source=ntp"
+            ><img src="./science.svg"
+          /></a>
         </div>
+        <div><img src="./app.svg" /></div>
+      </div>
     </header>
     <main>
-        <div>Google</div>
-        <div>
-            <input type="text" placeholder="Google 검색 또는 URL 입력" onfocus="this.placeholder = ''">
-            <div><button type="button"><img src="./mic.svg"></button></div>
-            <div><button type="button"><img src="./img.svg"></button></div>
-
-        </div>
-        <div>
-            <div>+</div>
-            <div>바로가기 추가</div>
-        </div>
-
+      <div>Google</div>
+      <div>
+        <input
+          type="text"
+          placeholder="Google 검색 또는 URL 입력"
+          onfocus="this.placeholder = ''"
+        />
+        <img src="./mic.svg" />
+        <img src="./img.svg" />
+      </div>
+      <div>
+        <div>+</div>
+        <div>바로가기 추가</div>
+      </div>
     </main>
     <footer>
-        <div>Chrome 맞춤설정</div>
+      <div><img src="./edit.svg" />Chrome 맞춤설정</div>
     </footer>
-</body>
-
+  </body>
 </html>

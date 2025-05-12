@@ -1,6 +1,7 @@
 * {
   margin: 0;
   background-color: #453641;
+  box-sizing: border-box;
 }
 
 header {
@@ -51,7 +52,7 @@ main > div:nth-child(1) {
 main > div:nth-child(2) {
   display: flex;
   position: relative;
-  width: 550px;
+  width: 100%;
   margin: 0px auto;
 }
 
@@ -59,7 +60,7 @@ input {
   display: flex;
   margin: 0 auto;
   padding-left: 50px;
-  width: 100%;
+  width: 80%;
   border-radius: 40px;
   height: 35px;
   background: url(./search.svg) no-repeat 16px;
@@ -67,12 +68,14 @@ input {
   background-color: white;
   padding-right: 80px;
   max-width: 450px;
+  box-sizing: border-box;
 }
 main > div:nth-child(2) > div {
   position: absolute;
-  right: 10px;
-  top: 5px;
   background-color: unset;
+  transform: translate(-50%, -50%);
+  top: 56%;
+  left: 74%;
 }
 main > div:nth-child(2) > div > img {
   cursor: pointer;

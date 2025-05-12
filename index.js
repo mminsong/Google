@@ -1,3 +1,4 @@
 function popUp() {
-  document.querySelector('popup').
+  var pop=document.querySelector('popup');
+    pop.alert('m');
 }

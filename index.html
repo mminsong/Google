@@ -1,68 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
     <title>새 탭</title>
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/popup.css" />
     <link rel="shortcut icon" type="image/x-icon" href="./image/google.ico" />
+  </head>
 
-    <script src="./index.js"></script>
-</head>
-
-<body ondragstart="return false" oncontextmenu="return false" onselectstart="return false">
+  <body
+    ondragstart="return false"
+    oncontextmenu="return false"
+    onselectstart="return false"
+  >
     <header>
+      <div>
+        <div>Gmail</div>
+        <div>이미지</div>
         <div>
-            <div>Gmail</div>
-            <div>이미지</div>
-            <div>
-                <a href="https://labs.google.com/search?source=ntp"><img class="test" src="./image/science.svg"
-                        alt="Search Labs" /></a>
-            </div>
-            <div><img src="./image/app.svg" alt="Google 앱" /></div>
+          <a href="https://labs.google.com/search?source=ntp"
+            ><img class="test" src="./image/science.svg" alt="Search Labs"
+          /></a>
         </div>
+        <div><img src="./image/app.svg" alt="Google 앱" /></div>
+      </div>
     </header>
     <main>
+      <div>
+        <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span
+        ><span>e</span>
+      </div>
+      <div>
+        <input
+          type="text"
+          placeholder="Google 검색 또는 URL 입력"
+          onfocus="this.placeholder = ''"
+        />
+        <div class="input-icons">
+          <img src="./image/mic.svg" alt="음성 검색" />
+          <img src="./image/image.svg" alt="이미지로 검색" />
+        </div>
+      </div>
+      <div onclick="popUp()">
+        <div>+</div>
+        <div>바로가기 추가</div>
+      </div>
+      <div onclick="remove()">
+        <div id="saveInfo"></div>
+        <button type="button">삭제</button>
+      </div>
+      <ul id="fast"></ul>
+      <form id="popup">
+        <div>바로가기 추가</div>
         <div>
-            <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+          <div>이름</div>
+          <input id="name" />
         </div>
         <div>
-            <input type="text" placeholder="Google 검색 또는 URL 입력" onfocus="this.placeholder = ''" />
-            <div class="input-icons">
-                <img src="./image/mic.svg" alt="음성 검색" />
-                <img src="./image/image.svg" alt="이미지로 검색" />
-            </div>
+          <div>URL</div>
+          <input id="url" />
         </div>
-        <div onclick="popUp()">
-            <div>+</div>
-            <div>바로가기 추가</div>
+        <div>
+          <button type="button" onclick="cancel()" id="cancelBtn" autofocus>
+            취소
+          </button>
+          <button type="submit" onclick="save()" id="saveBtn">완료</button>
         </div>
-        <form id="popup">
-            <div>바로가기 추가</div>
-            <div>
-                <div>이름</div>
-                <input id="name" />
-            </div>
-            <div>
-                <div>URL</div>
-                <input id="url" />
-            </div>
-            <div>
-                <button onclick="cancel()" id="cancel">취소</button>
-                <button onclick="save()" id="save">완료</button>
-            </div>
-            </div>
+      </form>
     </main>
     <footer>
-        <div><img src="./image/edit.svg" /> Chrome 맞춤설정</div>
+      <div><img src="./image/edit.svg" /> Chrome 맞춤설정</div>
     </footer>
-</body>
-
+    <script src="./index.js"></script>
+  </body>
 </html>

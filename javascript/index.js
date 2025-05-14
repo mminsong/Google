@@ -4,6 +4,8 @@ const username = document.getElementById("name");
 const url = document.getElementById("url");
 
 const info = document.querySelector("#saveInfo");
+
+//localStorage에 저장된 데이터 불러오기
 const saveName = localStorage.getItem(username);
 
 //바로가기 추가에 데이터가 없으면 삭제버튼 안보이게, 데이터가 있으면 저장된 localStorage 보여주기

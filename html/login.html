@@ -6,20 +6,23 @@
     <title>로그인 - Google 계정</title>
     <link rel="stylesheet" href="../css/login.css" />
   </head>
-  <body
-    ondragstart="return false"
-    oncontextmenu="return false"
-    onselectstart="return false"
-  >
+  <body>
     <div id="box">
       <div id="main">
         <div id="left">
-          <img src="../image/logo.png" alt="" />
+          <img ondragstart="return false" src="../image/logo.png" alt="" />
           <div id="text">로그인</div>
           <div id="existing">Google 계정 사용</div>
         </div>
-        <div id="right">
-          <div id="id"><input placeholder="이메일 또는 휴대전화" /></div>
+        <form id="right">
+          <div id="user">
+            <input
+              type="text"
+              name="userId"
+              id="userId"
+              placeholder="이메일 또는 휴대전화"
+            />
+          </div>
           <a
             id="lostid"
             href="https://accounts.google.com/signin/v2/usernamerecovery?continue=https%3A%2F%2Fwww.google.com%2F&dsh=S-2095399653%3A1747184603312165&ec=futura_ctr_og_so_72776761_p&flowEntry=ServiceLogin&flowName=GlifWebSignIn&hl=ko&ifkv=ASKV5MhI1sughini7odUber41IJAXqZuwucVrQt5oHNWWSUQSy8Nr3aNYZlDiClS7YK3PeJJtIUfKQ"
@@ -38,14 +41,14 @@
           </div>
           <div id="button">
             <button>계정 만들기</button>
-            <button id="next">다음</button>
+            <button id="nextBtn">다음</button>
           </div>
-        </div>
+        </form>
       </div>
       <div id="footer">
         <select>
-            <option value="한국어">한국어</option>
-        </selet>
+          <option value="한국어">한국어</option>
+        </select>
         <a
           href="https://support.google.com/accounts?hl=ko&visit_id=638827822854645252-4061770420&rd=2&p=account_iph#topic=3382296"
           target="_blank"

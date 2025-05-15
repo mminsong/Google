@@ -8,12 +8,12 @@
   justify-content: center;
   margin-top: 7%;
   width: 73%;
+  max-width: 950px;
 }
 #main {
   display: flex;
   margin: 0 auto;
   padding: 40px;
-  max-width: 950px;
   height: 330px;
   background-color: white;
   border-radius: 27px;
@@ -28,15 +28,29 @@
   width: 47px;
   height: 47px;
 }
-#left > div#text {
+#left > #text {
   font-size: 35px;
   padding-top: 15px;
   padding-bottom: 20px;
 }
+#left > div > button {
+  line-height: 30px;
+  height: 30px;
+  border-radius: 20px;
+  border-width: 1px;
+  display: flex;
+  cursor: pointer;
+}
+#left > div > button > img {
+  border-radius: 20px;
+}
+#left > div > button > div:nth-child(3) {
+  border-radius: 20px;
+}
 #right {
   width: 50%;
 }
-#right > #id > input {
+#right > #password > input {
   width: 100%;
   border-radius: 5px;
   border-width: 1px;
@@ -45,42 +59,55 @@
   margin: 100px 0 10px 0;
   padding-left: 15px;
 }
-#right > #password > input {
+#right > #v_pass > input {
   width: 15px;
   height: 15px;
 }
 
-#right > #button {
+#right > div > #button {
   align-items: end;
   margin-top: 80px;
   text-align: right;
 }
-#right > #button > button {
+#right > div > #button > button {
   line-height: 35px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
 }
-#right > #button > button:nth-child(1) {
+#right > div > #button > button:nth-child(1) {
   width: 115px;
   margin-right: 20px;
   color: #0b57d0;
   font-weight: 550;
 }
-#right > #button > button:nth-child(1):hover {
+#right > div > #button > button:nth-child(1):hover {
   border: none;
   background-color: #f5f8fd;
 }
-#right > #button > button:nth-child(2) {
+#right > div > #button > button:nth-child(2) {
   width: 70px;
   background-color: #0b57d0;
   color: white;
   font-weight: 600;
 }
 #footer {
-  display: flex;
+  margin-top: 18px;
+}
+#footer > select {
+  cursor: pointer;
+  padding-right: 100px;
+  border: none;
 }
 #footer > a {
   text-decoration: none;
   color: black;
+  margin-left: 10px;
+  font-size: 12px;
+  padding: 8px;
+  float: right;
+}
+#footer > a:hover {
+  background-color: #e2e7eb;
+  border-radius: 10px;
 }

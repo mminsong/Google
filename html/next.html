@@ -6,47 +6,64 @@
     <title>로그인 - Google 계정</title>
     <link rel="stylesheet" href="../css/next.css" />
   </head>
-  <body
-    ondragstart="return false"
-    oncontextmenu="return false"
-    onselectstart="return false"
-  >
+  <body>
     <div id="box">
       <div id="main">
         <div id="left">
-          <img src="../image/logo.png" alt="" />
+          <img ondragstart="return false" src="../image/logo.png" alt="" />
           <div id="text">시작하기</div>
-          <div id="userid"></div>
+          <div>
+            <button type="submit" id="userid">
+              <img src="../image/account.svg" />
+              <div id="userId"></div>
+              <div>▼</div>
+            </button>
+          </div>
         </div>
-        <div id="right">
-          <div id="id"><input placeholder="비밀번호 입력" /></div>
+        <form id="right">
           <div id="password">
-            <input type="checkbox" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;비밀번호 표시
+            <input
+              type="password"
+              name="password"
+              id="putpw"
+              placeholder="비밀번호 입력"
+            />
           </div>
-
-          <div id="button">
-            <button>다른 방법 시도</button>
-            <button id="next">다음</button>
+          <div id="v_pass">
+            <input
+              id="check"
+              type="checkbox"
+            />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;비밀번호 표시
           </div>
-        </div>
+          <div>
+            <div id="button">
+              <button>다른 방법 시도</button>
+              <button type="submit" id="nextBtn">다음</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id="footer">
+        <select>
+          <option value="한국어">한국어</option>
+        </select>
+        <a
+          href="https://support.google.com/accounts?hl=ko&visit_id=638827822854645252-4061770420&rd=2&p=account_iph#topic=3382296"
+          target="_blank"
+        >
+          도움말
+        </a>
+        <a
+          href="https://policies.google.com/privacy?gl=KR&hl=ko"
+          target="_blank"
+          >개인정보처리방침</a
+        >
+        <a href="https://policies.google.com/terms?gl=KR&hl=ko" target="_blank"
+          >약관</a
+        >
       </div>
     </div>
-    <div id="footer">
-      <div>한국어</div>
-      <a
-        href="https://support.google.com/accounts?hl=ko&visit_id=638827822854645252-4061770420&rd=2&p=account_iph#topic=3382296"
-        target="_blank"
-      >
-        도움말
-      </a>
-      <a href="https://policies.google.com/privacy?gl=KR&hl=ko" target="_blank"
-        >개인정보처리방침</a
-      >
-      <a href="https://policies.google.com/terms?gl=KR&hl=ko" target="_blank"
-        >약관</a
-      >
-    </div>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="../javascript/login.js"></script>
+    <script src="../javascript/next.js"></script>
   </body>
 </html>

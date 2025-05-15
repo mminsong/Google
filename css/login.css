@@ -8,12 +8,12 @@
   justify-content: center;
   margin-top: 7%;
   width: 80%;
+  max-width: 950px;
 }
 #main {
   display: flex;
   margin: 0 auto;
   padding: 40px;
-  max-width: 950px;
   height: 330px;
   background-color: white;
   border-radius: 27px;
@@ -28,7 +28,7 @@
   width: 47px;
   height: 47px;
 }
-#left > div#text {
+#left > #text {
   font-size: 35px;
   padding-top: 15px;
   padding-bottom: 20px;
@@ -36,7 +36,7 @@
 #right {
   width: 50%;
 }
-#right > #id > input {
+#right > #user > input {
   width: 100%;
   border-radius: 5px;
   border-width: 1px;
@@ -92,6 +92,7 @@
 #footer > select {
   cursor: pointer;
   padding-right: 100px;
+  border: none;
 }
 #footer > a {
   text-decoration: none;
@@ -99,6 +100,7 @@
   margin-left: 10px;
   font-size: 12px;
   padding: 8px;
+  float: right;
 }
 #footer > a:hover {
   background-color: #e2e7eb;

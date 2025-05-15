@@ -14,7 +14,6 @@
     />
     <title>새 탭</title>
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/popup.css" />
     <link rel="shortcut icon" type="image/x-icon" href="./image/google.ico" />
   </head>
 
@@ -67,21 +66,23 @@
         <button type="button">삭제</button>
       </div>
       <ul id="fast"></ul>
-      <form id="popup">
-        <div>바로가기 추가</div>
-        <div>
-          <div>이름</div>
-          <input id="name" />
-        </div>
-        <div>
-          <div>URL</div>
-          <input id="url" />
-        </div>
-        <div>
-          <button type="button" onclick="cancel()" id="cancelBtn" autofocus>
-            취소
-          </button>
-          <button type="submit" onclick="save()" id="saveBtn">완료</button>
+      <form id="modal">
+        <div id="popup">
+          <div>바로가기 추가</div>
+          <div id="box">
+            <div>이름</div>
+            <input id="name" />
+          </div>
+          <div id="box">
+            <div>URL</div>
+            <input id="url" />
+          </div>
+          <div>
+            <button type="button" onclick="cancel()" id="cancelBtn">
+              취소
+            </button>
+            <button onclick="save()" id="saveBtn" disabled>완료</button>
+          </div>
         </div>
       </form>
     </main>

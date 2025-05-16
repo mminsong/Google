@@ -39,6 +39,10 @@
         >
           로그인
         </button>
+        <form id="drop-down">
+          <div id="nickname"></div>
+          <div id="logout">로그아웃</div>
+        </form>
       </div>
     </header>
     <main>
@@ -57,21 +61,24 @@
           <img src="./image/image.svg" alt="이미지로 검색" />
         </div>
       </div>
-      <div onclick="popUp()">
-        <div>+</div>
-        <div>바로가기 추가</div>
+      <div id="box">
+        <div id="inputBox">
+          <div id="remove">⁝</div>
+          <div id="urlName"></div>
+          <div id="urlAdd"></div>
+        </div>
+        <div id="add" onclick="popUp()">
+          <div>+</div>
+          <div>바로가기 추가</div>
+        </div>
       </div>
-      <div onclick="remove()">
-        <div id="saveInfo"></div>
-        <button type="button">삭제</button>
-      </div>
-      <ul id="fast"></ul>
+
       <form id="modal">
         <div id="popup">
           <div>바로가기 추가</div>
           <div id="box">
             <div>이름</div>
-            <input id="name" />
+            <input id="urlname" />
           </div>
           <div id="box">
             <div>URL</div>
@@ -81,7 +88,7 @@
             <button type="button" onclick="cancel()" id="cancelBtn">
               취소
             </button>
-            <button onclick="save()" id="saveBtn" disabled>완료</button>
+            <button type="submit" id="saveBtn" disabled>완료</button>
           </div>
         </div>
       </form>

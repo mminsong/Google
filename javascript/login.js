@@ -14,3 +14,7 @@ document.getElementById("nextBtn").addEventListener("click", function () {
     }, 10);
   }
 });
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("userId").value = localStorage.getItem("username");
+  document.getElementById("userId").focus();
+});

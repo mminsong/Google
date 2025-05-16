@@ -2,6 +2,13 @@
 const existingId = localStorage.getItem("username");
 document.getElementById("userId").textContent = existingId;
 
+//아이디 입력한 값 클릭하면 login.html으로 넘어가게
+document.getElementById("userId").addEventListener("click", function () {
+  window.location.href = `../html/login.html?userId=${encodeURIComponent(
+    existingId
+  )}`;
+});
+
 //비밀번호 입력하기
 document.getElementById("nextBtn").addEventListener("click", function () {
   if (document.getElementById("putpw").value === "") {
@@ -11,7 +18,9 @@ document.getElementById("nextBtn").addEventListener("click", function () {
     localStorage.setItem("pw", b);
 
     setTimeout(() => {
-      window.location.href = `../index.html`;
+      window.location.href = `../index.html?userId=${encodeURIComponent(
+        document.getElementById("userId")
+      )}&password=${encodeURIComponent(document.getElementById("putpw"))}`;
     });
   }
 });
